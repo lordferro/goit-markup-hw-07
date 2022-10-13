@@ -24,34 +24,34 @@
   <body>
     <!-- top line -->
     <header class="page-header">
-      <div class="header-container container">
+      <div class="page-header__container container">
         <nav class="main-nav">
           <a href="" class="logo">
-            <span lang="en">Web<span class="text-black">Studio</span></span>
+            <span lang="en">Web<span class="logo--black">Studio</span></span>
           </a>
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current">Студія</a>
+          <ul class="main-nav__list list">
+            <li class="main-nav__item">
+              <a href="./index.html" class="main-nav__link main-nav__link--current">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+            <li class="main-nav__item">
+              <a href="./portfolio.html" class="main-nav__link">Портфоліо</a>
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">Контакти</a></li>
           </ul>
         </nav>
         <!-- contacts -->
         <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-link">
-              <svg class="envelope" width="16" height="12">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contact-link">
-              <svg class="smartphone" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -65,8 +65,8 @@
       <!-- Hero -->
       <section>
         <div class="hero">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="button hero-button">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open type="button" class="button hero__button">
             Замовити послугу
           </button>
 
@@ -74,72 +74,72 @@
 
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
-              <button data-modal-close class="modal-button button">
-                <svg width="11" height="11" class="modal-icon">
+              <button data-modal-close class="modal__close-button">
+                <svg width="11" height="11" class="modal__close-icon">
                   <use href="./img/icons.svg#icon-close"></use>
                 </svg>
               </button>
-              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-              <form class="form-modal">
-                <div class="form-field">
-                  <label for="name" class="form-label">Ім'я</label>
-                  <div class="input-icon">
-                    <input type="text" class="form-input" id="name" />
-                    <svg width="18" height="18" class="form-icon">
+              <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+              <form class="modal__form">
+                <div class="modal__field">
+                  <label for="name" class="modal__label">Ім'я</label>
+                  <div class="modal__container">
+                    <input type="text" class="modal__input" id="name" />
+                    <svg width="18" height="18" class="modal__input-icon">
                       <use href="./img/icons.svg#icon-name"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="form-field">
-                  <label for="tel" class="form-label">Телефон</label>
-                  <div class="input-icon">
-                    <input type="tel" class="form-input" id="tel" />
-                    <svg width="18" height="18" class="form-icon">
+                <div class="modal__field">
+                  <label for="tel" class="modal__label">Телефон</label>
+                  <div class="modal__container">
+                    <input type="tel" class="modal__input" id="tel" />
+                    <svg width="18" height="18" class="modal__input-icon">
                       <use href="./img/icons.svg#icon-phone"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="form-field">
-                  <label for="email" class="form-label">Пошта</label>
-                  <div class="input-icon">
-                    <input type="email" class="form-input" id="email" />
-                    <svg width="18" height="18" class="form-icon">
+                <div class="modal__field">
+                  <label for="email" class="modal__label">Пошта</label>
+                  <div class="modal__container">
+                    <input type="email" class="modal__input" id="email" />
+                    <svg width="18" height="18" class="modal__input-icon">
                       <use href="./img/icons.svg#icon-email"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="form-field">
-                  <label for="comment" class="form-label">Коментар</label>
+                <div class="modal__field">
+                  <label for="comment" class="modal__label">Коментар</label>
                   <textarea
                     name="comment"
-                    class="form-input form-comment"
+                    class="modal__input modal__comment"
                     id="comment"
                     rows="20"
                     placeholder="Введіть текст"
                   ></textarea>
                 </div>
-                <div class="form-license">
+                <div class="modal__license">
                   <input
                     type="checkbox"
                     id="license"
-                    class="license-checkbox"
+                    class="modal__license-checkbox"
                   />
-                  <label for="license" class="license-label"
+                  <label for="license" class="modal__license-label"
                     >Погоджуюся з розсилкою та приймаю&nbsp;<span
-                      ><a class="license-condition" href=""
+                      ><a class="modal__license-condition" href=""
                         >Умови договору</a
                       ></span
                     >
-                    <svg width="16" height="15" class="license-icon">
+                    <svg width="16" height="15" class="modal__license-icon">
                       <use href="./img/icons.svg#icon-checkbox"></use>
                     </svg>
-                    <svg width="16" height="15" class="license-icon2">
+                    <svg width="16" height="15" class="modal__license-icon2">
                       <use href="./img/icons.svg#icon-checkbox2"></use>
                     </svg>
                   </label>
                 </div>
               </form>
-              <input type="submit" value="Відправити" class="submit-button" />
+              <input type="submit" value="Відправити" class="modal__submit-button button" />
             </div>
           </div>
         </div>
@@ -148,51 +148,51 @@
       <!-- Features -->
       <section class="section">
         <div class="features container">
-          <h2 class="visually-hidden title">Особливості</h2>
-          <ul class="features-list list">
-            <li class="item">
-              <div class="features-icon">
-                <svg class="icon" width="70" height="70">
+          <h2 class="visually-hidden">Особливості</h2>
+          <ul class="features__list list">
+            <li class="features__item">
+              <div class="features__icon-thumb">
+                <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="text">
+              <h3 class="features__title title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="item">
-              <div class="features-icon">
-                <svg class="icon" width="70" height="70">
+            <li class="features__item">
+              <div class="features__icon-thumb">
+                <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="text">
+              <h3 class="features__title title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="item">
-              <div class="features-icon">
-                <svg class="icon" width="70" height="70">
+            <li class="features__item">
+              <div class="features__icon-thumb">
+                <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">ПЛАНУВАННЯ</h3>
-              <p class="text">
+              <h3 class="features__title title">ПЛАНУВАННЯ</h3>
+              <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item">
-              <div class="features-icon">
-                <svg class="icon" width="70" height="70">
+            <li class="features__item">
+              <div class="features__icon-thumb">
+                <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="text">
+              <h3 class="features__title title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -448,7 +448,7 @@
       <div class="footer container">
         <div class="logo-address">
           <a href="" class="logo">
-            <span lang="en">Web<span class="text-white">Studio</span></span>
+            <span lang="en">Web<span class="logo--white">Studio</span></span>
           </a>
           <address>
             <ul class="address-list list">
@@ -524,7 +524,7 @@
               />
               <button
                 type="submit"
-                class="subscribe-button button submit-button"
+                class="subscribe-button button"
               >
                 Підписатися
                 <svg class="subscribe-icon" width="24" height="24">
