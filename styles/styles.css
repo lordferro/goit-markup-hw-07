@@ -1,4 +1,4 @@
-:root {
+ :root {
   --primary-text-color: #757575;
   --secondary-text-color: rgba(255, 255, 255, 0.6);
   --title-color: #212121;
@@ -107,7 +107,7 @@ body {
 
 .section__no-padding {
   padding-top: 0;
-}
+} */
 
 /* Header */
 
@@ -162,7 +162,7 @@ body {
 }
 
 .main-nav__item:first-child {
- margin-left: 0;
+  margin-left: 0;
 }
 
 .main-nav__link {
@@ -275,7 +275,7 @@ body {
 
 .hero__button {
   width: 216px;
-  height: 60px; 
+  height: 60px;
 }
 
 .backdrop {
@@ -359,9 +359,7 @@ body {
 .modal__field {
   display: flex;
   flex-direction: column;
-}
 
-.modal__field {
   margin-top: 10px;
 }
 
@@ -369,9 +367,11 @@ body {
   margin-top: 0;
 }
 
-.modal__input:focus,
-.modal__input:focus + .modal__input-icon {
+.modal__input:focus {
   border-color: var(--accent-color);
+}
+
+.modal__input:focus + .modal__input-icon {  
   fill: var(--accent-color);
 }
 
@@ -432,7 +432,7 @@ body {
   padding-left: 36px;
 }
 
-.modal__license-checkbox {
+/* .modal__license-checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -443,7 +443,7 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
 .modal__license-icon {
   position: absolute;
@@ -737,7 +737,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__social-networks__icon{
+.footer__social-networks__icon {
   fill: var(--white-color);
 }
 
@@ -775,14 +775,14 @@ body {
   background-color: transparent;
 
   font-size: 16px;
-  line-height: 1.25;   
-  color: rgba(255, 255, 255, 0.6); 
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .modal__submit-button,
 .subscribe-button {
   width: 200px;
-  height: 50px; 
+  height: 50px;
 }
 
 .subscribe-button {
