@@ -52,7 +52,6 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .modal__close-icon,
   .modal__close-icon {
     .modal__close-button:hover &,
     .modal__close-button:focus & {
@@ -73,13 +72,13 @@
   }
    
   .modal__field {
-    :first-child {
+    &:first-child {
         margin-top: 0;
     }    
   }
   
   .modal__input {
-    :focus {
+    &:focus {
         border-color: $accent-color;    
       }
   }
@@ -177,8 +176,11 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .modal__license-checkbox:checked + .modal__license-label .modal__license-icon2 {
-    opacity: 1;
+  .modal__license-icon2 {
+    .modal__license-checkbox:checked + .modal__license-label & {
+      opacity: 1;
+    }
+    
   }
   
   .modal__license-label {
@@ -191,5 +193,10 @@
   
   .modal__license-condition {
     color: $accent-color;
+  }
+
+  .modal__submit-button {
+    width: 200px;
+    height: 50px;
   }
   

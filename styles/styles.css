@@ -432,7 +432,7 @@ body {
   padding-left: 36px;
 }
 
-/* .modal__license-checkbox {
+.modal__license-checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -443,7 +443,7 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-} */
+}
 
 .modal__license-icon {
   position: absolute;

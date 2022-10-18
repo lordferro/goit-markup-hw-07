@@ -18,8 +18,10 @@
     margin-left: 50px;
   }
   
-  .main-nav__item:first-child {
-    margin-left: 0;
+  .main-nav__item {
+    &:first-child {
+      margin-left: 0;
+    }
   }
   
   .main-nav__link {
@@ -39,7 +41,7 @@
   }
   
   .main-nav__link--current {
-    ::after {
+    &::after {
     content: "";
     display: flex;
     width: 100%;
@@ -62,7 +64,7 @@
   }
   
   .contacts__item {
-    :first-child {
+    &:first-child {
       margin-left: 0;
     }
   }
@@ -88,14 +90,17 @@
     margin-right: 10px;
   }
   
-  .main-nav__link,
-  .main-nav__link,
-  .contacts__link,
-  .contacts__link,
-  .footer-contact,
-  .footer-contact {
-    :hover,
-    :focus {
+  .main-nav__link {
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    }
+  }
+
+  .contacts__link {
+    &:hover,
+    &:focus {
     color: $accent-color;
     fill: $accent-color;
     }
