@@ -73,12 +73,12 @@
                   <use href="./img/icons.svg#icon-close"></use>
                 </svg>
               </button>
-              <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-              <form class="modal__form">
+              <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>           
+              <form class="js-speaker-form modal__form">
                 <div class="modal__field">
                   <label for="name" class="modal__label">Ім'я</label>
                   <div class="modal__container">
-                    <input type="text" class="modal__input" id="name" />
+                    <input type="text" class="modal__input" id="name" name="name"/>
                     <svg width="18" height="18" class="modal__input-icon">
                       <use href="./img/icons.svg#icon-name"></use>
                     </svg>
@@ -87,7 +87,7 @@
                 <div class="modal__field">
                   <label for="tel" class="modal__label">Телефон</label>
                   <div class="modal__container">
-                    <input type="tel" class="modal__input" id="tel" />
+                    <input type="tel" class="modal__input" id="tel" name="mobile"/>
                     <svg width="18" height="18" class="modal__input-icon">
                       <use href="./img/icons.svg#icon-phone"></use>
                     </svg>
@@ -96,7 +96,7 @@
                 <div class="modal__field">
                   <label for="email" class="modal__label">Пошта</label>
                   <div class="modal__container">
-                    <input type="email" class="modal__input" id="email" />
+                    <input type="email" class="modal__input" id="email" name="email"/>
                     <svg width="18" height="18" class="modal__input-icon">
                       <use href="./img/icons.svg#icon-email"></use>
                     </svg>
@@ -619,5 +619,18 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+          document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+              e.preventDefault();
+
+              new FormData(e.currentTarget).forEach((value, name) =>
+                  console.log(`${name}: ${value}`),
+              );
+
+              e.currentTarget.reset();
+          });
+      })();
+  </script>
   </body>
 </html>
