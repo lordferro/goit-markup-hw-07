@@ -598,6 +598,14 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+}
+.modal__comment::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__comment:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -1022,6 +1030,15 @@ body {
   background-color: transparent;
   font-size: 16px;
   line-height: 1.25;
+  color: gray;
+}
+.subscribe__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
