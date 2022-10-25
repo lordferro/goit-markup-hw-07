@@ -556,7 +556,7 @@ body {
   border-color: #2196f3;
 }
 
-.modal__input:focus .modal__input-icon {
+.modal__input:focus + .modal__input-icon {
   fill: #2196f3;
 }
 

@@ -84,7 +84,7 @@
   }
   
   .modal__input-icon {
-    .modal__input:focus & {  
+    .modal__input:focus + & {  
         fill: $accent-color;
       }
   }
